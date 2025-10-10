@@ -1,6 +1,7 @@
 DELIMITER //
 CREATE PROCEDURE ManageBooking(IN bdate DATETIME, IN tnum INT)
 BEGIN
+
 DECLARE no_entries INT;
 SELECT 
     COUNT(*)
@@ -24,5 +25,6 @@ SELECT
             tnum,
             ' has been successfully booked') AS 'Booking Status';
 END IF;
+
 END //
 DELIMITER ;

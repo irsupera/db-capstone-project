@@ -1,4 +1,4 @@
- PREPARE GetOrderDetail FROM 
+PREPARE GetOrderDetail FROM 
 'SELECT 
     o.OrderId, d.Quantity, d.TotalAmount
 FROM
